@@ -46,3 +46,9 @@ def test_mark_reset():
     assert get() == (OP, ")")
     assert get() == (OP, "+")
     assert get() == (NAME, "abc")
+
+
+# if __name__ == "__main__":
+#     test_basic()
+#     test_mark_reset()
+#     print("All tests passed")

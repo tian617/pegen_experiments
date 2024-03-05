@@ -9,6 +9,7 @@ class Parser:
     def reset(self, pos):
         self.tokenizer.reset(pos)
 
+    # does not consume token when return None.
     def expect(self, arg):
         token = self.tokenizer.peek_token()
         if token.type == arg or token.string == arg:
