@@ -21,7 +21,7 @@ def main():
     print("[")
     for rule in rules:
         print(f"  {rule},")
-    print("]")
+    print("]\n")
     for rule in rules:
         print(rule.name, end=": ", file=sys.stderr)
         print(*(" ".join(alt) for alt in rule.alts), sep=" | ", file=sys.stderr)

@@ -6,4 +6,4 @@ term: atom '*' term | atom '/' atom | atom
 atom: NAME | NUMBER | '(' expr ')'
 assignment: target '=' expr
 target: NAME
-if_statement: 'if' expr ':' statement
+if_statement: 'if2' expr ':' statement

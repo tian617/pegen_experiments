@@ -6,6 +6,7 @@ from story2.tokenizer import Tokenizer
 from story2.parser import Parser
 from story2.toy import ToyParser
 
+
 def test_basic():
     program = "f(42)"
     file = StringIO(program)

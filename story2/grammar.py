@@ -18,6 +18,13 @@ class Rule:
             return NotImplemented
         return self.name == other.name and self.alts == other.alts
 
+# 手写Rule解析器，递归下降法，语法不含左递归
+'''
+grammar: rule+ ENDMARKER
+rule: NAME ':' alternative (| alternative)* NEWLINE
+alternative: item+
+item: NAME | STRING
+'''
 
 class GrammarParser(Parser):
 
